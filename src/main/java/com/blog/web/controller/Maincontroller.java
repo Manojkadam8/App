@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class Maincontroller {
 
-    @RequestMapping("/home")
+    @RequestMapping("/")
     public String about( Model m)
     {
     	m.addAttribute("name","Manoj");
         System.out.println("inside home");
-        return "Home";
+        return "index";
     }
 }
 
